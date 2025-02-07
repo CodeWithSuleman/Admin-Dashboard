@@ -1,5 +1,4 @@
 "use client"
-import ProtectedRoute from "@/app/components/protected/page";
 import { client } from "@/sanity/lib/client";
 import { useEffect, useState } from "react";
 import Swal from "sweetalert2";
@@ -7,6 +6,7 @@ import Image from "next/image";
 import { urlFor } from "@/sanity/lib/image";
 import React from "react";
 import { useRouter } from "next/navigation";
+import ProtectedRoute from "@/app/components/ProtectedRoute";
 
 // Define Order Type
 interface Order {
